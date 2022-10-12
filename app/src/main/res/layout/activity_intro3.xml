@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Intro_Activity"
-    android:background="@drawable/gradient_background"
-    >
+    tools:context=".intro3_activity"
+    android:background="@drawable/gradient_background">
 
     <ImageView
-        android:id="@+id/intro_lowongan"
+        android:id="@+id/intro_jurusan"
         android:layout_width="302dp"
         android:layout_height="318dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,15 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.344"
-        app:srcCompat="@drawable/iv_onboarding_1" />
-
+        app:srcCompat="@drawable/iv_onboarding_3" />
     <TextView
-        android:id="@+id/lowongan_text"
+        android:id="@+id/sesuaikan_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="432dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Lowongan"
+        android:text="Sesuaikan"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
@@ -33,17 +32,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Pekerjaan_text"
+        android:id="@+id/jurusanmu_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="432dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Pekerjaan"
+        android:text="Jurusanmu"
         android:textColor="@color/orange"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toEndOf="@+id/lowongan_text"
+        app:layout_constraintStart_toEndOf="@+id/sesuaikan_text"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -52,12 +51,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Berbagai lowongan pekerjaan yang disediakan oleh Dunia Industri"
+        android:text="
+ Lowongan pekerjaan dari
+Dunia Industri yang bekerja sama
+dengan SMK Negeri 8 Semarang "
         android:textAlignment="center"
         android:textSize="18dp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro_lowongan" />
+        app:layout_constraintTop_toBottomOf="@+id/intro_jurusan" />
 </androidx.constraintlayout.widget.ConstraintLayout>
